@@ -4,7 +4,7 @@ import Map from "./Map";
 
 export default function Services() {
   return (
-    <div class="relative w-full bg-black">
+    <div class="relative w-full bg-off-dark">
       <section class="mx-auto min-h-[500px] max-w-[1440px]  bg-black bg-hero-pattern py-20 px-6 flex flex-col gap-12 items-center text-white">
         <Intro
           title="Location"
@@ -24,7 +24,7 @@ export default function Services() {
                 rel="noopener noreferrer"
                 className="underline text-off-white"
               >
-                276 Jackson St,
+                194 Jackson St,
                 <br />
                 Petone 5012,
                 <br />

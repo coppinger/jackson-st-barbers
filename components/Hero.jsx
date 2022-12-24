@@ -3,7 +3,7 @@ import Nav from "./Nav";
 
 export default function Hero() {
   return (
-    <div className="relative w-full bg-black">
+    <div className="relative w-full bg-off-dark">
       <div className="mx-auto min-h-[500px] max-w-[1440px] bg-hero-pattern px-6">
         <Nav />
         <section className="flex flex-col lg:flex-row gap-10 text-white pb-12 lg:items-center lg:justify-center lg:gap-16 lg:pb-32 lg:pt-24 max-w-screen-lg mx-auto">

@@ -19,7 +19,7 @@ export default function Footer() {
         rel="noopener noreferrer"
         className="underline text-center"
       >
-        276 Jackson St,
+        194 Jackson St,
         <br />
         Petone 5012,
         <br />

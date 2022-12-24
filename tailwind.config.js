@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         "dark-gray": "#2A2829",
         "off-white": "#DBD8D0",
+        "off-dark": "#141414",
       },
       backgroundImage: {
         "hero-pattern": "url('/small-chalk-tile.png')",
