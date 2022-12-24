@@ -14,7 +14,9 @@ export default function Reviews(props) {
         <div className="max-w-screen-lg lg:flex lg:flex-row-reverse lg:gap-16  lg:justify-center lg:items-center">
           <ul className="flex flex-col gap-12 lg:w-full">
             <li className="flex flex-col gap-2">
-              <p>“The best haircut I’ve found on Jackson St, thank you Ali!”</p>
+              <p>
+                {"The best haircut I’ve found on Jackson St, thank you Ali!"}
+              </p>
               <div className="flex gap-1">
                 <svg
                   width="17"
@@ -85,9 +87,9 @@ export default function Reviews(props) {
             </li>
             <li className="flex flex-col gap-2">
               <p>
-                "Would highly recommend! Man is a beast at skin fades and is
-                clean with each cut! Earned a new local customer, cheers for the
-                cut brother 🙌"
+                {
+                  "Would highly recommend! Man is a beast at skin fades and is clean with each cut! Earned a new local customer, cheers for the cut brother 🙌"
+                }
               </p>
               <div className="flex gap-1">
                 <svg
@@ -159,8 +161,9 @@ export default function Reviews(props) {
             </li>
             <li className="flex flex-col gap-2">
               <p>
-                "I got my 4 year olds first cut here. He was super efficient and
-                patient with a very unsettled little boy. Highly recommend"
+                {
+                  "I got my 4 year olds first cut here. He was super efficient and patient with a very unsettled little boy. Highly recommend"
+                }
               </p>
               <div className="flex gap-1">
                 <svg
