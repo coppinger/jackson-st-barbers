@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Reviews(props) {
   return (
     <div class="relative w-full bg-white">
-      <section class="mx-auto min-h-[500px] max-w-[1440px] bg-white bg-reviews-bg bg-center py-20 px-6 flex flex-col gap-12 items-center text-black">
+      <section class="mx-auto min-h-[500px] max-w-[1440px] bg-white bg-reviews-bg bg-right py-20 px-6 flex flex-col gap-12 items-center text-black">
         <Intro
           title="Word on the street"
           text="Kind words from some of our customers."

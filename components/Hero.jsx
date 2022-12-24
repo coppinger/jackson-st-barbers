@@ -41,7 +41,7 @@ export default function Hero() {
                   <p className="font-bold whitespace-nowrap uppercase text-lg">
                     Mon
                   </p>
-                  <hr className="w-full border-1 border-white border-dotted" />
+                  <hr className="w-full border-t-[1px] border-b-[1px] border-white border-dashed" />
                   <p className="whitespace-nowrap text-off-white">
                     10:15 am – 6:00 pm
                   </p>
@@ -50,7 +50,7 @@ export default function Hero() {
                   <p className="font-bold whitespace-nowrap uppercase text-lg">
                     Tue, Wed, Thu
                   </p>
-                  <hr className="w-full border-1 border-white border-dotted" />
+                  <hr className="w-full border-t-[1px] border-b-[1px] border-white border-dashed" />
                   <p className="whitespace-nowrap text-off-white">
                     9:15 am – 6:00 pm
                   </p>
@@ -60,7 +60,7 @@ export default function Hero() {
                     <p className="font-bold whitespace-nowrap uppercase text-lg">
                       Fri
                     </p>
-                    <hr className="w-full border-1 border-white border-dotted" />
+                    <hr className="w-full border-t-[1px] border-b-[1px] border-white border-dashed" />
                     <p className="whitespace-nowrap text-off-white">
                       9:15 am – 1:30 pm
                     </p>
@@ -73,7 +73,7 @@ export default function Hero() {
                   <p className="font-bold whitespace-nowrap uppercase text-lg">
                     Sat
                   </p>
-                  <hr className="w-full border-1 border-white border-dotted" />
+                  <hr className="w-full border-t-[1px] border-b-[1px] border-white border-dashed" />
                   <p className="whitespace-nowrap text-off-white">
                     9:15 am – 4:00 pm
                   </p>
@@ -82,7 +82,7 @@ export default function Hero() {
                   <p className="font-bold whitespace-nowrap uppercase text-lg">
                     Sun
                   </p>
-                  <hr className="w-full border-1 border-white border-dotted" />
+                  <hr className="w-full border-t-[1px] border-b-[1px] border-white border-dashed" />
                   <p className="whitespace-nowrap text-off-white">
                     10:00 am – 3:00 pm
                   </p>
