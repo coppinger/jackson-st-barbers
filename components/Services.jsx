@@ -4,7 +4,10 @@ import Intro from "./Intro";
 export default function Services() {
   return (
     <div class="relative w-full bg-white">
-      <section class="mx-auto min-h-[500px] max-w-[1440px] bg-white bg-services-bg bg-center py-20 px-6 flex flex-col gap-12 items-center">
+      <section
+        class="mx-auto min-h-[500px] max-w-[1440px] bg-white bg-services-bg bg-center py-20 px-6 flex flex-col gap-12 items-center"
+        id="services"
+      >
         <Intro
           title="Services"
           text="Whatever kind of cut you’re after, we’ve got you covered."
@@ -15,27 +18,37 @@ export default function Services() {
             <li className="flex justify-between items-center gap-2">
               <p className="font-bold whitespace-nowrap">Basic cut</p>
               <hr className="w-full border-t-[1px] border-b-[1px] border-black border-dashed" />
-              <p>$35.00</p>
+              <p className="w-fit shrink-0">from $30.00</p>
+            </li>
+            <li className="flex justify-between items-center gap-2">
+              <p className="font-bold whitespace-nowrap">Zero fade</p>
+              <hr className="w-full border-t-[1px] border-b-[1px] border-black border-dashed" />
+              <p className="w-fit shrink-0">from $35.00</p>
             </li>
             <li className="flex justify-between items-center gap-2">
               <p className="font-bold whitespace-nowrap">Razor fade</p>
               <hr className="w-full border-t-[1px] border-b-[1px] border-black border-dashed" />
-              <p>$50.00</p>
+              <p className="w-fit shrink-0">from $40.00</p>
             </li>
             <li className="flex justify-between items-center gap-2">
               <p className="font-bold whitespace-nowrap">Beard trim</p>
               <hr className="w-full border-t-[1px] border-b-[1px] border-black border-dashed" />
-              <p>$25.00</p>
+              <p className="w-fit shrink-0">from $15.00</p>
             </li>
             <li className="flex justify-between items-center gap-2">
-              <p className="font-bold whitespace-nowrap">Full works</p>
+              <p className="font-bold whitespace-nowrap">Beard trim, shape</p>
               <hr className="w-full border-t-[1px] border-b-[1px] border-black border-dashed" />
-              <p>$60.00</p>
+              <p className="w-fit shrink-0">from $20.00</p>
             </li>
             <li className="flex justify-between items-center gap-2">
               <p className="font-bold whitespace-nowrap">Buzz cut</p>
               <hr className="w-full border-t-[1px] border-b-[1px] border-black border-dashed" />
-              <p>$20.00</p>
+              <p className="w-fit shrink-0">from $25.00</p>
+            </li>
+            <li className="flex justify-between items-center gap-2">
+              <p className="font-bold whitespace-nowrap">Kids under 10</p>
+              <hr className="w-full border-t-[1px] border-b-[1px] border-black border-dashed" />
+              <p className="w-fit shrink-0">from $25.00</p>
             </li>
           </ul>
         </div>

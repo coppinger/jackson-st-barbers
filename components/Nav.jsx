@@ -7,10 +7,10 @@ export default function Nav() {
       <nav className="flex justify-center pt-6 mb-12">
         <ul className="flex gap-12 mx-auto  items-center">
           <li className="text-lg font-bold text-white uppercase tracking-widest hidden md:block font-cevirnobold">
-            Services
+            <a href="#services">Services</a>
           </li>
           <li className="text-lg font-bold text-white uppercase tracking-widest hidden md:block font-cevirnobold">
-            Location
+            <a href="#location">Location</a>
           </li>
           <li>
             <Image
@@ -22,7 +22,7 @@ export default function Nav() {
             />
           </li>
           <li className="text-lg font-bold text-white uppercase tracking-widest hidden md:block font-cevirnobold">
-            Reviews
+            <a href="#reviews">Reviews</a>
           </li>
           <li className="hidden md:block ">
             <a

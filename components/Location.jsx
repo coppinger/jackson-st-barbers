@@ -5,7 +5,10 @@ import Map from "./Map";
 export default function Services() {
   return (
     <div class="relative w-full bg-off-dark">
-      <section class="mx-auto min-h-[500px] max-w-[1440px]  bg-black bg-hero-pattern py-20 px-6 flex flex-col gap-12 items-center text-white">
+      <section
+        class="mx-auto min-h-[500px] max-w-[1440px]  bg-black bg-hero-pattern py-20 px-6 flex flex-col gap-12 items-center text-white"
+        id="location"
+      >
         <Intro
           title="Location"
           text="We’re located right in the heart of Petone."

@@ -32,7 +32,8 @@ export default function Hero() {
                 Jackson St’s locally-owned barber shop
               </h1>
               <p className="text-off-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Experience the finest haircuts and shaves at our traditional
+                barber shop.
               </p>
             </div>
             <div className="border-2 border-white p-4 w-full max-w-[440px]">
