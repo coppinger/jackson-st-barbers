@@ -84,9 +84,7 @@ export default function Hero() {
                     Sun
                   </p>
                   <hr className="w-full border-t-[1px] border-b-[1px] border-white border-dashed" />
-                  <p className="whitespace-nowrap text-off-white">
-                    10:00 am – 3:00 pm
-                  </p>
+                  <p className="whitespace-nowrap text-off-white">Closed</p>
                 </li>
               </ul>
             </div>
