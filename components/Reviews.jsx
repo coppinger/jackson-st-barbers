@@ -248,7 +248,7 @@ export default function Reviews(props) {
           </div>
         </div>
 
-        <Button text="Book now" url="#" dark={true} />
+        {/* <Button text="Book now" url="tel:0223592995" dark={true} /> */}
       </section>
     </div>
   );

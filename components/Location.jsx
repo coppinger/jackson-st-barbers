@@ -45,7 +45,7 @@ export default function Services() {
             </div>
           </div>
         </div>
-        <Button text="Book now" url="#" dark={false} />
+        {/* <Button text="Book now" url="tel:0223592995" dark={false} /> */}
       </section>
     </div>
   );
