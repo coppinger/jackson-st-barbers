@@ -3,6 +3,8 @@ const { GoogleSpreadsheet } = require("google-spreadsheet");
 
 const SUPER_SECRET = process.env.SUPER_SECRET;
 
+console.log(SUPER_SECRET);
+
 const creds = JSON.parse(SUPER_SECRET);
 
 // Create a document object using the ID of the spreadsheet - obtained from its URL.
