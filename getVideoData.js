@@ -1,7 +1,7 @@
 const { GoogleSpreadsheet } = require("google-spreadsheet");
 // credentials you have generated when creating the service account. TIP: DO NOT check this into your Git repo and it to your .gitignore file
 
-let SUPER_SECRTET = process.env.SUPER_SECRET;
+const SUPER_SECRET = process.env.SUPER_SECRET;
 
 const creds = JSON.parse(SUPER_SECRET);
 
