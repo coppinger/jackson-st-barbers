@@ -3,7 +3,7 @@ const { GoogleSpreadsheet } = require("google-spreadsheet");
 
 const SUPER_SECRET = process.env.SUPER_SECRET;
 
-console.log(SUPER_SECRET);
+console.log(JSON.parse(SUPER_SECRET));
 
 const creds = JSON.parse(SUPER_SECRET);
 
