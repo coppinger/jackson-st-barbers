@@ -7,7 +7,7 @@ const doc = new GoogleSpreadsheet(
     "1g6_FLr3W_Mkr_ADLWQs5v7Mepvcjt0YECgUVKKCe0_c"
 );
 
-export async function getVideoData() {
+export default async function getVideoData() {
     try {
         // google sheets
         await doc.useServiceAccountAuth(creds);
