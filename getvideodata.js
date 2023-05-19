@@ -1,6 +1,6 @@
 const { GoogleSpreadsheet } = require("google-spreadsheet");
 // credentials you have generated when creating the service account. TIP: DO NOT check this into your Git repo and it to your .gitignore file
-const creds = require("../clientsecret.json");
+const creds = require("/clientsecret.json");
 
 // Create a document object using the ID of the spreadsheet - obtained from its URL.
 const doc = new GoogleSpreadsheet(
