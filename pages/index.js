@@ -9,28 +9,32 @@ import Reviews from "../components/Reviews";
 import BookNow from "../components/BookNow";
 import Footer from "../components/Footer";
 
-export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Jackson St Barbers — Fresh Haircuts In Petone </title>
-      </Head>
-      <main>
-        <Hero />
-        <Services />
-        <Location />
-        <Reviews />
-        <BookNow />
-        <Footer />
-      </main>
-    </>
-  );
+export async function getStaticProps(context) {
+    // Get external data from the file system, API, DB, etc.
+    const data = await getVideoData();
+
+    // The value of the `props` key will be
+    //  passed to the `Home` component
+    return {
+        props: { data },
+        revalidate: 10, // In seconds
+    };
 }
 
-// <Image
-// src="/thirteen.svg"
-// alt="13"
-// width={40}
-// height={31}
-// priority
-// />
+export default function Home() {
+    return (
+        <>
+            <Head>
+                <title>Jackson St Barbers — Fresh Haircuts In Petone </title>
+            </Head>
+            <main>
+                <Hero />
+                <Services />
+                <Location />
+                <Reviews />
+                <BookNow />
+                <Footer />
+            </main>
+        </>
+    );
+}
