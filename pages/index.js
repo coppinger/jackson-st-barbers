@@ -8,6 +8,7 @@ import Location from "../components/Location";
 import Reviews from "../components/Reviews";
 import BookNow from "../components/BookNow";
 import Footer from "../components/Footer";
+import getVideoData from "../getVideoData";
 
 export async function getStaticProps(context) {
     // Get external data from the file system, API, DB, etc.
