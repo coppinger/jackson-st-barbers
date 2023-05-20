@@ -8,28 +8,16 @@ import Location from "../components/Location";
 import Reviews from "../components/Reviews";
 import BookNow from "../components/BookNow";
 import Footer from "../components/Footer";
-import getVideoData from "../getVideoData.js";
+import { getContent } from "../lib/api";
 
-export async function getStaticProps(context) {
-    // Get external data from the file system, API, DB, etc.
-    const data = await getVideoData();
-
-    // The value of the `props` key will be
-    //  passed to the `Home` component
-    return {
-        props: { data },
-        revalidate: 10, // In seconds
-    };
-}
-
-export default function Home() {
+export default function Home({ content }) {
     return (
         <>
             <Head>
                 <title>Jackson St Barbers — Fresh Haircuts In Petone </title>
             </Head>
             <main>
-                <Hero />
+                <Hero content={content} />
                 <Services />
                 <Location />
                 <Reviews />
@@ -38,4 +26,18 @@ export default function Home() {
             </main>
         </>
     );
+}
+
+export async function getStaticProps(context) {
+    const content = await getContent();
+
+    return {
+        props: {
+            content,
+        },
+        // Next.js will attempt to re-generate the page:
+        // - When a request comes in
+        // - At most once every second
+        revalidate: 1, // In seconds
+    };
 }
