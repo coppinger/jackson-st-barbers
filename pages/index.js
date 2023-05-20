@@ -1,7 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Location from "../components/Location";
@@ -14,7 +11,45 @@ export default function Home({ content }) {
     return (
         <>
             <Head>
-                <title>Jackson St Barbers — Fresh Haircuts In Petone </title>
+                <title>Jackson St Barbers — Fresh Haircuts In Petone</title>
+                <meta
+                    name="title"
+                    content="Jackson St Barbers — Fresh Haircuts In Petone"
+                />
+                <meta
+                    name="description"
+                    content="Discover Jackson St Barbers - your local barbershop offering high-quality men's grooming services. Professional and friendly barbers ready to give you a precision cut, shave, or beard trim. Walk-ins welcome at our convenient downtown location."
+                />
+
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:url"
+                    content="https://www.jacksonstbarbers.co.nz/"
+                />
+                <meta
+                    property="og:title"
+                    content="Jackson St Barbers — Fresh Haircuts In Petone"
+                />
+                <meta
+                    property="og:description"
+                    content="Discover Jackson St Barbers - your local barbershop offering high-quality men's grooming services. Professional and friendly barbers ready to give you a precision cut, shave, or beard trim. Walk-ins welcome at our convenient downtown location."
+                />
+                <meta property="og:image" content="" />
+
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta
+                    property="twitter:url"
+                    content="https://www.jacksonstbarbers.co.nz/"
+                />
+                <meta
+                    property="twitter:title"
+                    content="Jackson St Barbers — Fresh Haircuts In Petone"
+                />
+                <meta
+                    property="twitter:description"
+                    content="Discover Jackson St Barbers - your local barbershop offering high-quality men's grooming services. Professional and friendly barbers ready to give you a precision cut, shave, or beard trim. Walk-ins welcome at our convenient downtown location."
+                />
+                <meta property="twitter:image" content="" />
             </Head>
             <main>
                 <Hero content={content} />
