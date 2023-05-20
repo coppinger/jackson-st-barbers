@@ -40,7 +40,7 @@ export default function Hero({ content }) {
                         <div className="border-2 border-white p-4 w-full max-w-[440px]">
                             <ul className="flex flex-col gap-2">
                                 {content
-                                    .slice(0, content.length - 1)
+                                    .slice(0, content.length)
                                     .map(({ day, opening, closing }) => (
                                         <>
                                             <ScheduleListItem

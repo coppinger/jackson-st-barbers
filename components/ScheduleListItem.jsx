@@ -7,7 +7,9 @@ export default function ScheduleListItem({ day, opening, closing }) {
                 </p>
                 <hr className="w-full border-t-[1px] border-b-[1px] border-white border-dashed" />
                 <p className="whitespace-nowrap text-off-white">
-                    {opening} – {closing}
+                    {opening === "Closed"
+                        ? "Closed"
+                        : `${opening} – ${closing}`}
                 </p>
             </li>
         );
