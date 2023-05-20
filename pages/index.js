@@ -34,7 +34,10 @@ export default function Home({ content }) {
                     property="og:description"
                     content="Discover Jackson St Barbers - your local barbershop offering high-quality men's grooming services. Professional and friendly barbers ready to give you a precision cut, shave, or beard trim. Walk-ins welcome at our convenient downtown location."
                 />
-                <meta property="og:image" content="" />
+                <meta
+                    property="og:image"
+                    content="https://www.jacksonstbarbers.co.nz/jackson-st-barbers-petone.jpg"
+                />
 
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta
@@ -49,7 +52,10 @@ export default function Home({ content }) {
                     property="twitter:description"
                     content="Discover Jackson St Barbers - your local barbershop offering high-quality men's grooming services. Professional and friendly barbers ready to give you a precision cut, shave, or beard trim. Walk-ins welcome at our convenient downtown location."
                 />
-                <meta property="twitter:image" content="" />
+                <meta
+                    property="twitter:image"
+                    content="https://www.jacksonstbarbers.co.nz/jackson-st-barbers-petone.jpg"
+                />
             </Head>
             <main>
                 <Hero content={content} />
