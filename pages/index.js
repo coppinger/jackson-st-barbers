@@ -12,6 +12,7 @@ export default function Home({ content }) {
         <>
             <Head>
                 <title>Jackson St Barbers — Fresh Haircuts In Petone</title>
+                <link rel="icon" href="/favicon.png" />
                 <meta
                     name="title"
                     content="Jackson St Barbers — Fresh Haircuts In Petone"
