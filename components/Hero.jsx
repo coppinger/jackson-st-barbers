@@ -2,7 +2,7 @@ import Image from "next/image";
 import Nav from "./Nav";
 import ScheduleListItem from "./ScheduleListItem";
 
-export default function Hero({ content }) {
+export default function Hero({ schedule }) {
     return (
         <div className="relative w-full bg-off-dark">
             <div className="mx-auto min-h-[500px] max-w-[1440px] bg-hero-pattern px-6">
@@ -39,17 +39,27 @@ export default function Hero({ content }) {
                         </div>
                         <div className="border-2 border-white p-4 w-full max-w-[440px]">
                             <ul className="flex flex-col gap-2">
-                                {content
-                                    .slice(0, content.length)
-                                    .map(({ day, opening, closing }) => (
-                                        <>
-                                            <ScheduleListItem
-                                                day={day}
-                                                opening={opening}
-                                                closing={closing}
-                                            />
-                                        </>
-                                    ))}
+                                {schedule
+                                    .slice(0, schedule.length)
+                                    .map(
+                                        ({
+                                            day,
+                                            opening,
+                                            closing,
+                                            reopening,
+                                            reclosing,
+                                        }) => (
+                                            <>
+                                                <ScheduleListItem
+                                                    day={day}
+                                                    opening={opening}
+                                                    closing={closing}
+                                                    reopening={reopening}
+                                                    reclosing={reclosing}
+                                                />
+                                            </>
+                                        )
+                                    )}
                             </ul>
                         </div>
                     </div>

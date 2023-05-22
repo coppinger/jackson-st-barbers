@@ -7,7 +7,7 @@ import BookNow from "../components/BookNow";
 import Footer from "../components/Footer";
 import { getContent } from "../lib/api";
 
-export default function Home({ content }) {
+export default function Home({ schedule, services }) {
     return (
         <>
             <Head>
@@ -59,8 +59,8 @@ export default function Home({ content }) {
                 />
             </Head>
             <main>
-                <Hero content={content} />
-                <Services />
+                <Hero schedule={schedule} />
+                <Services services={services} />
                 <Location />
                 <Reviews />
                 <BookNow />
@@ -71,11 +71,12 @@ export default function Home({ content }) {
 }
 
 export async function getStaticProps(context) {
-    const content = await getContent();
+    const { schedule, services } = await getContent();
 
     return {
         props: {
-            content,
+            schedule,
+            services,
         },
         // Next.js will attempt to re-generate the page:
         // - When a request comes in
